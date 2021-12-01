@@ -1,6 +1,6 @@
 # immutability-but-worse
 
-A simple contract users can delegate to that votes no on every governance proposal.
+A simple contract users can delegate their governance tokens to that votes no on every proposal.
 
 Compatible with **OpenZeppelin** and **Compound** style governance systems.
 

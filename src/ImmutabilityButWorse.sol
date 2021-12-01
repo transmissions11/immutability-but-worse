@@ -1,14 +1,11 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity 0.8.10;
 
-interface Governance {
-    function castVoteWithReason(
-        uint256 proposalId,
-        uint8 support,
-        string memory reason
-    ) external;
-}
-
+/// @title Immutability But Worse
+/// @author Transmissions11 (https://2λ.com)
+/// @notice A simple contract users can delegate their
+/// governance tokens to that votes no on every proposal.
+/// @dev Compatible with OpenZeppelin and Compound style governance.
 contract ImmutabilityButWorse {
     string public constant WHY_I_VOTED_NO = "no.";
 
@@ -19,4 +16,12 @@ contract ImmutabilityButWorse {
 
         emit VotedNo(gov, id);
     }
+}
+
+interface Governance {
+    function castVoteWithReason(
+        uint256 proposalId,
+        uint8 support,
+        string memory reason
+    ) external;
 }
