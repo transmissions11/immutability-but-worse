@@ -8,7 +8,7 @@ let
 in
   pkgs.mkShell {
     src = null;
-    name = "dapptools-template";
+    name = "immutability-but-worse";
     buildInputs = with pkgs; [
       pkgs.dapp
     ];

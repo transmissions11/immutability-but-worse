@@ -1,5 +1,5 @@
 {
-  "name": "dapptools-template",
+  "name": "immutability-but-worse",
   "license": "AGPL-3.0-only",
   "version": "1.0.0",
   "description": "Streamlined template for getting started with DappTools and Solmate.",
@@ -8,7 +8,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/transmissions11/dapptools-template.git"
+    "url": "git+https://github.com/transmissions11/immutability-but-worse.git"
   },
   "devDependencies": {
     "prettier": "^2.3.1",
