@@ -9,7 +9,7 @@ pragma solidity 0.8.10;
 contract ImmutabilityButWorse {
     string public constant WHY_I_VOTED_NO = "no.";
 
-    event VotedNo(Governance gov, uint256 id);
+    event VotedNo(Governance indexed gov, uint256 id);
 
     function voteNo(Governance gov, uint256 id) external {
         gov.castVoteWithReason(id, 0, WHY_I_VOTED_NO);
